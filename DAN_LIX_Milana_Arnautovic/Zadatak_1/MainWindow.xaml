@@ -8,119 +8,123 @@
         Title="MainWindow" Height="500" Width="500">
     <Grid>
 
-        <Button x:Name="one" Content="" HorizontalAlignment="Left" Margin="47,10,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click">
+        <Button x:Name="one" Content="" HorizontalAlignment="Left" Margin="34,32,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="two" Content="" HorizontalAlignment="Left" Margin="232,10,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button  x:Name="two" Content="" HorizontalAlignment="Left" Margin="247,32,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36" RenderTransformOrigin="0.517,1.599">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="three" Content="" HorizontalAlignment="Left" Margin="139,10,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="three" Content="" HorizontalAlignment="Left" Margin="139,32,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="four" Content="" HorizontalAlignment="Left" Margin="333,10,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="four" Content="" HorizontalAlignment="Left" Margin="349,32,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="five" Content="" HorizontalAlignment="Left" Margin="47,95,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="five" Content="" HorizontalAlignment="Left" Margin="34,131,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="six" Content="" HorizontalAlignment="Left" Margin="232,95,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="six" Content="" HorizontalAlignment="Left" Margin="247,131,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="seven" Content="" HorizontalAlignment="Left" Margin="139,95,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="seven" Content="" HorizontalAlignment="Left" Margin="139,131,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="eight" Content="" HorizontalAlignment="Left" Margin="333,95,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="eight" Content="" HorizontalAlignment="Left" Margin="349,131,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="nine" Content="" HorizontalAlignment="Left" Margin="47,175,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="nine" Content="" HorizontalAlignment="Left" Margin="34,231,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36" RenderTransformOrigin="0.337,1.658">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="ten" Content="" HorizontalAlignment="Left" Margin="139,175,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36" RenderTransformOrigin="1.729,0.557">
+        <Button x:Name="ten" Content="" HorizontalAlignment="Left" Margin="139,231,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36" RenderTransformOrigin="1.729,0.557">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="eleven" Content="" HorizontalAlignment="Left" Margin="232,175,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="eleven" Content="" HorizontalAlignment="Left" Margin="247,231,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36" RenderTransformOrigin="0.702,1.886">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="twelve" Content="" HorizontalAlignment="Left" Margin="333,175,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="twelve" Content="" HorizontalAlignment="Left" Margin="349,231,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="thirteen" Content="" HorizontalAlignment="Left" Margin="47,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="thirteen" Content="" HorizontalAlignment="Left" Margin="34,331,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="fourteen" Content="" HorizontalAlignment="Left" Margin="232,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="fourteen" Content="" HorizontalAlignment="Left" Margin="247,331,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="fifteen" Content="" HorizontalAlignment="Left" Margin="139,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="fifteen" Content="" HorizontalAlignment="Left" Margin="139,331,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36" RenderTransformOrigin="0.496,-1.206">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="sixteen" Content="" HorizontalAlignment="Left" Margin="333,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36">
+        <Button x:Name="sixteen" Content="" HorizontalAlignment="Left" Margin="349,331,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="button_Click" FontSize="36" RenderTransformOrigin="0.634,-1.262">
             <Button.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="Blue" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Button Name="StartGame"
+                        Margin="313,415,9.6,0"
+                        FontSize="25"
+                        Click="StartGame_Click" VerticalAlignment="Top">New Game</Button>
 
-        
     </Grid>
+
 </Window>

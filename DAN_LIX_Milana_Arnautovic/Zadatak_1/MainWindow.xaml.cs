@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,10 +14,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+
 
 namespace Zadatak_1
 {
-   
+    /// <summary>
+    /// Card names
+    /// </summary>
     enum ButtonNames
     {
         one = 1,
@@ -41,6 +47,8 @@ namespace Zadatak_1
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
         private List<String> _words = new List<string>();
         private List<Int32> _wordsCount = new List<int>();
         private List<String> _wordsValue = new List<string>();
@@ -50,7 +58,11 @@ namespace Zadatak_1
 
         public MainWindow()
         {
+
+
             InitializeComponent();
+            //adding symbols to the list
+
             _wordsValue.Add("A");
             _wordsValue.Add("B");
             _wordsValue.Add("C");
@@ -62,6 +74,8 @@ namespace Zadatak_1
             InitializeSymbols();
             _default = one.Background;
         }
+
+
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
@@ -77,6 +91,7 @@ namespace Zadatak_1
                 }
             }
         }
+
 
         private void InitializeSymbols()
         {
@@ -96,9 +111,27 @@ namespace Zadatak_1
                 _wordsCount[buf]--;
             }
         }
+        /// <summary>
+        /// Start new game
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StartGame_Click(object sender, RoutedEventArgs e)
+        {
+            DoEnableButtons();
+            _words.Clear();
+            _wordsCount.Clear();
+            _disabledButtons = 0;
+            InitializeSymbols();
 
+        }
+        /// <summary>
+        /// Game
+        /// </summary>
+        /// <param name="sender"></param>
         private void OpenButton(object sender)
         {
+
             String name = ((Button)sender).Name;
             ((Button)sender).Content = _words[((int)Enum.Parse(typeof(ButtonNames), name)) - 1];
             ((Button)sender).Background = Brushes.Green;
@@ -113,9 +146,10 @@ namespace Zadatak_1
                         _disabledButtons++;
                     }
                     _buttons.Clear();
-                    if (_disabledButtons == 16)
+                    if (_disabledButtons == 16) //if all the fields are open, the game is over
+
                     {
-                        MessageBox.Show("Congratulations!", "Win", MessageBoxButton.OK, MessageBoxImage.Information);
+                        MessageBox.Show("Congratulations! You won.", "Win", MessageBoxButton.OK, MessageBoxImage.Information);
                         DoEnableButtons();
                         _words.Clear();
                         _wordsCount.Clear();
@@ -123,9 +157,14 @@ namespace Zadatak_1
                         InitializeSymbols();
                     }
                 }
+
+
             }
         }
 
+        /// <summary>
+        ///  Closing tabs
+        /// </summary>
         private void CloseButtons()
         {
             foreach (var button in _buttons)
@@ -187,6 +226,7 @@ namespace Zadatak_1
             fifteen.Background = _default;
             sixteen.Background = _default;
         }
+
     }
 }
 
